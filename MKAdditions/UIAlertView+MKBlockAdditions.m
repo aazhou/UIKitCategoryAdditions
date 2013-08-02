@@ -45,7 +45,7 @@ static char CANCEL_IDENTIFER;
                   onDismiss:(DismissBlock) dismissed                   
                    onCancel:(CancelBlock) cancelled {
         
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
+    __autoreleasing UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
                                                     message:message
                                                    delegate:[self class]
                                           cancelButtonTitle:cancelButtonTitle
@@ -58,7 +58,7 @@ static char CANCEL_IDENTIFER;
         [alert addButtonWithTitle:buttonTitle];
     
     [alert show];
-    return [alert autorelease];
+    return alert;
 }
 
 + (UIAlertView*) alertViewWithTitle:(NSString*) title 
@@ -72,13 +72,13 @@ static char CANCEL_IDENTIFER;
 + (UIAlertView*) alertViewWithTitle:(NSString*) title 
                     message:(NSString*) message
           cancelButtonTitle:(NSString*) cancelButtonTitle {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
+    __autoreleasing UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
                                                     message:message
                                                    delegate:nil
                                           cancelButtonTitle:cancelButtonTitle
                                           otherButtonTitles: nil];
     [alert show];
-    return [alert autorelease];
+    return alert;
 }
 
 

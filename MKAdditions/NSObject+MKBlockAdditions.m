@@ -14,16 +14,15 @@ static VoidBlock _block;
 
 - (void) performBlock:(VoidBlock) aBlock
 {
-    [_block release];     
-    _block = [aBlock copy];
+    _block = nil;
+    _block = aBlock;
     
     [self performSelector:@selector(callBlock)];
 }
 
 - (void) performBlock:(VoidBlock) aBlock afterDelay:(NSTimeInterval) delay
-{
-    [_block release];     
-    _block = [aBlock copy];
+{     
+    _block = aBlock;
 
     [self performSelector:@selector(callBlock) withObject:nil afterDelay:delay];
 }
@@ -31,7 +30,6 @@ static VoidBlock _block;
 -(void) callBlock
 {
     _block();
-    [_block release];
     _block = nil;
 }
 
