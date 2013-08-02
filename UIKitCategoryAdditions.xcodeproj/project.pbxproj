@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FD0629D17AB5D75005BA737 /* UIKitCategoryAdditions.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2FD0629C17AB5D74005BA737 /* UIKitCategoryAdditions.podspec */; };
 		AB171ABE133CE804006867EB /* NSObject+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB171ABD133CE804006867EB /* NSObject+MKBlockAdditions.m */; };
 		AB5E754F1336DD790016813D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5E754E1336DD790016813D /* UIKit.framework */; };
 		AB5E75511336DD790016813D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5E75501336DD790016813D /* Foundation.framework */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FD0629C17AB5D74005BA737 /* UIKitCategoryAdditions.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UIKitCategoryAdditions.podspec; sourceTree = "<group>"; };
 		AB171ABC133CE804006867EB /* NSObject+MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MKBlockAdditions.h"; sourceTree = "<group>"; };
 		AB171ABD133CE804006867EB /* NSObject+MKBlockAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MKBlockAdditions.m"; sourceTree = "<group>"; };
 		AB5E754A1336DD790016813D /* UIKitCategoryAdditions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitCategoryAdditions.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +64,7 @@
 		AB5E753F1336DD790016813D = {
 			isa = PBXGroup;
 			children = (
+				2FD0629C17AB5D74005BA737 /* UIKitCategoryAdditions.podspec */,
 				ABD7413313388D3400899EE2 /* MKAdditions */,
 				ABD7410B13388C9E00899EE2 /* UIKitCategoryAdditions */,
 				AB5E754D1336DD790016813D /* Frameworks */,
@@ -168,6 +171,7 @@
 				ABD7411B13388C9E00899EE2 /* InfoPlist.strings in Resources */,
 				ABD7411C13388C9E00899EE2 /* MainWindow.xib in Resources */,
 				ABD7411D13388C9E00899EE2 /* UIKitCategoryViewController.xib in Resources */,
+				2FD0629D17AB5D75005BA737 /* UIKitCategoryAdditions.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
