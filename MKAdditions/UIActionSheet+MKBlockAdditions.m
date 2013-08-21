@@ -81,7 +81,7 @@ static UIViewController *_presentVC;
     _cancelBlock = nil;
     _cancelBlock  = cancelled;
     
-    _photoPickedBlock nil;
+    _photoPickedBlock = nil;
     _photoPickedBlock  = photoPicked;
     
     _presentVC = nil;
@@ -94,7 +94,8 @@ static UIViewController *_presentVC;
 													cancelButtonTitle:nil
 											   destructiveButtonTitle:nil
 													otherButtonTitles:nil];
-
+    
+    [actionSheet setActionSheetStyle:UIActionSheetStyleBlackTranslucent];
 	if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
 	{
 		[actionSheet addButtonWithTitle:NSLocalizedString(@"Camera", @"")];
